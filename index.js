@@ -23,10 +23,6 @@ app.get("/", (req, res) => {
     res.send("<h1>👋🏻 Hello from the Lern server!</h1>");
 });
 
-app.use(cors({
-        origin: "https://lernapv.onrender.com"
-    }
-))
 app.options('*', cors())
 app.use("/api", routes);
 
